@@ -29,21 +29,14 @@ function changeBackgroundSubmitButton(){
 };
 
 changeBackgroundSubmitButton();
- 
-// Function than take the rating value
 
-let ratingButton1 = document.querySelector("#btn-1");
-let ratingButton2 = document.querySelector("#btn-2");
-let ratingButton3 = document.querySelector("#btn-3");
-let ratingButton4 = document.querySelector("#btn-4");
-let ratingButton5 = document.querySelector("#btn-5");
+// Function than take the value of the rating and add it to the rate paragraphe
 
-ratingButton1 = 1;
-ratingButton2 = 2;
-ratingButton3 = 3;
-ratingButton4 = 4;
-ratingButton5 = 5;
+function addValue(){
+  submitBtn.addEventListener('click', () => {
 
+  })
+}
 
 // Reprend au moment ou tu dois prendre la valeur des note pour les implanter dans le paragraphe qui suit
 // "You selected ... out of 5"
