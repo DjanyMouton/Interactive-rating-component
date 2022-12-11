@@ -12,3 +12,10 @@ function changeClassRatingButton(){
   }
 };
 changeClassRatingButton();
+
+const submitBtn = document.querySelector('.submit-btn');
+
+submitBtn.addEventListener('click', () => {
+  console.log('oui')
+  submitBtn.classList.toggle('submit-click')
+})

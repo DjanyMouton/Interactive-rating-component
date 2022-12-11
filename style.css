@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+/* GENERAL PARAMETER */
 *{
     margin: 0;
 }
@@ -14,6 +15,8 @@ body{
     width: 100%;
     background-color: rgb(255, 241, 225);
 }
+
+/* MAIN CONTENT */
 #image-div{
     display: flex;
     align-items: center;
@@ -63,15 +66,15 @@ body{
     cursor: pointer;
     height: 40px;
     width: 40px;
-    color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
     background-color: hsl(213, 19%, 21%);
     border-radius: 50%;
 }
-.btn{
-    margin-top: 20px;
+.submit-btn{
+    padding: 12px;
+    width: 310px;
     border-radius: 25px;
     border: none;
-    padding: 20px;
     background-color: hsl(25, 97%, 53%);
     color: white;
     font-weight: bold;
@@ -79,9 +82,23 @@ body{
     text-transform: uppercase;
     cursor: pointer;
 }
+.submit-link{
+    border-radius: 25px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
 
 /* JavaScript class used for component */
 
  .rating-hover{
-    background-color: rgb(40, 80, 114);
+    background-color: hsl(25, 97%, 53%);
+ }
+ .submit-click{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
  }
