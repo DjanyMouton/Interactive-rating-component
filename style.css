@@ -67,7 +67,7 @@ body{
     background-color: hsl(213, 19%, 21%);
     border-radius: 50%;
 }
-#btn{
+.btn{
     margin-top: 20px;
     border-radius: 25px;
     border: none;
@@ -79,3 +79,9 @@ body{
     text-transform: uppercase;
     cursor: pointer;
 }
+
+/* JavaScript class used for component */
+
+ .rating-hover{
+    background-color: rgb(40, 80, 114);
+ }
