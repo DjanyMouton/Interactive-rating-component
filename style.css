@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+}
+#image{
+    background-image: url(/images/icon-star.svg);
+    margin-bottom: 10px;
+}
+#main{
+    background-color: hsl(213, 19%, 18%);
+    padding: 30px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+#title{
+    font-size: 1.5rem;
+    color: white;
+}
+#paragraphe{
+    font-size: 15px;
+}
