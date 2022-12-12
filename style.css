@@ -17,6 +17,7 @@ body{
 }
 
 /* MAIN CONTENT */
+
 #image-div{
     display: flex;
     align-items: center;
@@ -93,6 +94,38 @@ body{
     margin-top: 20px;
 }
 
+/* Result section */
+
+.rate-div{
+    display: none;
+}
+#image-thanks{
+    height: 120px;
+    width: 180px;
+    background-size: contain;
+    background-image: url(/images/illustration-thank-you.svg);
+}
+#rate-paragraphe{
+    height: 30px;
+    width: 200px;
+    background-color:  hsl(213, 19%, 21%);
+    border-radius: 25px;
+    margin-top: 20px;
+}
+#thank-you{
+    margin-top: 20px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+#paragraphe-thanks{
+    width: 320px;
+    text-align: center;
+    color: rgb(189, 189, 189);
+    line-height: 1.5;
+    margin-top: 20px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
 /* JavaScript class used for component */
 
  .rating-hover{
@@ -102,3 +135,9 @@ body{
     background-color: white;
     color: hsl(25, 97%, 53%);
  }
+.card-hidden{
+    display: none;
+}
+.rate-div-visible{
+    display: flex;
+}
