@@ -12,70 +12,43 @@
 <body>
 
   <main id="main">
-    <div class="card">
-
-      <div id="image-div"><img id="image" src="/images/icon-star.svg" alt="Star icon"></div>
-  
-      <h1 id="title">
-        How did we do?
-      </h1>
-  
-      <p id="paragraphe">
-        Please let us know how we did with your support request. All feedback is appreciated 
-        to help us improve our offering!
-      </p>
-  
-      <section id="rating-section">
-        
-        <button id="btn-1" class="rating-div" value="1">
-          1
-        </button>
-  
-        <button id="btn-2" class="rating-div" value="2">
-          2
-        </button>
-  
-        <button id="btn-3" class="rating-div" value="3">
-          3
-        </button>
-  
-        <button id="btn-4" class="rating-div" value="4">
-          4
-        </button>
-  
-        <button id="btn-5" class="rating-div" value="5">
-          5
-        </button>
-  
-      </section>
-  
-      <a class="submit-link" href="#">
-        <button class="submit-btn"> SUBMIT </button>
-      </a>
-    </div>
-
-    <!-- Result page -->
-
-    <div class="rate-div">
-      <div id="image-thanks">
-    
+    <div class="container">
+      <div class="card">
+        <div class="card__image">
+          <img src="images/icon-star.svg" alt="star" />
+        </div>
+        <h1 class="card--title">How did we do?</h1>
+        <p class="card--paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ul>
+          <li class="list__item">1</li>
+          <li class="list__item">2</li>
+          <li class="list__item">3</li>
+          <li class="list__item">4</li>
+          <li class="list__item">5</li>
+        </ul>
+        <button class="btn__submit">Submit</button>
       </div>
-    
-      <p id="rate-paragraphe">
-          
-      </p>
-    
-      <h2 id="thank-you">
-          Thank You !
-      </h2>
-    
-      <p id="paragraphe-thanks">
-          We appreciate you taking the time to give a rating. <br> If you ever need more support, don't hesitate to get in touch!
-      </p>
+      
+      <div class="success">
+        <div class="success_img">
+          <img src="images/illustration-thank-you.svg" alt="thankyou" />
+        </div>
+
+        <p class="success__value">
+          You selected <span class="span__value">x</span> out of 5
+        </p>
+        <h1>Thank you!</h1>
+        <p class="success__bottom">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
     </div>
-
   </main>
-
+  
 
 
   <script src="function.js"></script>

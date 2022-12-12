@@ -1,29 +1,21 @@
-// Function than change the background color of the rating number when mouse is over or out //
-const ratingButton = document.querySelectorAll(".rating-div");
-let arr = [];
-function changeClassRatingButton(){
-  for (let i = 0; i < ratingButton.length; i++) {
-      ratingButton[i].addEventListener("mouseover", () => {
-        ratingButton[i].classList.toggle("rating-hover");
-      });
-      ratingButton[i].addEventListener("mouseout", () => {
-         ratingButton[i].classList.remove("rating-hover")
-      });
-  }
-};
-changeClassRatingButton();
+const buttons = document.querySelectorAll(".list__item");
+const submit = document.querySelector(".btn__submit");
+const rating = document.querySelector(".span__value");
+const card = document.querySelector(".card");
+const success = document.querySelector(".success");
 
-// Function than change the backgound of the submit button
+let value;
 
-const submitBtn = document.querySelector('.submit-btn');
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    buttons.forEach((button) => button.classList.remove("list__change"));
+    e.target.classList.add("list__change");
+    value = e.target.textContent;
+  });
+});
 
-function changeBackgroundSubmitButton(){
-  submitBtn.addEventListener('mouseover', () => {
-    submitBtn.classList.toggle('submit-click')
-  })
-  submitBtn.addEventListener('mouseout', () => {
-    submitBtn.classList.remove('submit-click')
-  })
-};
-
-changeBackgroundSubmitButton();
+submit.addEventListener("click", () => {
+  rating.textContent = value;
+  card.style.display = "none";
+  success.style.display = "flex";
+});
